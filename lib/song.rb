@@ -91,7 +91,10 @@ class Song
     newsong.genre = Genre.find_or_create_by_name(genre)
     newsong
     
-    
+  end
+  
+  def self.create_from_filename(name)
+    self.new_from_filename(name)
   end
   
   

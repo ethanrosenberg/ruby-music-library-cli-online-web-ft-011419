@@ -87,6 +87,7 @@ class Song
     genre = parts[2]
     genre.slice! ".mp3"
     newsong = Findable.find_or_create_by_name(song_name)
+    newsong.artist = Artist.
     newsong
     
     

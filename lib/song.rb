@@ -77,6 +77,13 @@ class Song
       self.create(name)
     end
   end
+  
+  def self.new_from_filename(name)
+    self.find_or_create_by_name(name)
+  end
+  
+  
+  
 end
 
 

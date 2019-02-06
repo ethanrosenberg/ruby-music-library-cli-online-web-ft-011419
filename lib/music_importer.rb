@@ -16,7 +16,7 @@ class MusicImporter
     #clean_name = file.gsub("#{@path}", "")
     clean_name = file.gsub("#{@path}/", "")
     @files << clean_name
-      binding.pry
+      #binding.pry
     name = file
     end
   

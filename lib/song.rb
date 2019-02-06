@@ -79,7 +79,13 @@ class Song
   end
   
   def self.new_from_filename(name)
-    self.find_or_create_by_name(name)
+   parts = name.split(" - ")
+    song_name = parts[1]
+    artist = parts[0]
+    genre = parts[2]
+    genre.slice! ".mp3"
+    newsong = self.new(song_name)
+    
   end
   
   

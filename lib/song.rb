@@ -86,7 +86,7 @@ class Song
     artist = parts[0]
     genre = parts[2]
     genre.slice! ".mp3"
-    newsong = self.new(song_name)
+    newsong = Findable.(song_name)
     
   end
   

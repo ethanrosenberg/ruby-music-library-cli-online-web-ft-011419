@@ -25,6 +25,6 @@ class MusicLibraryController
   end
   
   def list_songs
-    
+    Song.all.collect {|song| ""
   end
 end

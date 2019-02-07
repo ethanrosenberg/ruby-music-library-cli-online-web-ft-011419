@@ -21,5 +21,6 @@ class MusicLibraryController
       puts "What would you like to do?"
       binding.pry
       userinput = gets.chomp
+    end
   end
 end

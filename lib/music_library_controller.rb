@@ -25,6 +25,6 @@ class MusicLibraryController
   end
   
   def list_songs
-    Song.all.each_with_index.map {|song| ""
+    Song.all.each_with_index {|song, index| }
   end
 end
